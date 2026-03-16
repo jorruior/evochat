@@ -1,4 +1,4 @@
-# 🧬 evochat
+# 🧬 evochat (v0.1.0)
 
 An LLM-powered chatbot for gene evolution queries, backed by the [Ensembl REST API](https://rest.ensembl.org) and [HGNC](https://www.genenames.org).
 
