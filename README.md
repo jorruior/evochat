@@ -51,7 +51,7 @@ Ollama runs LLMs locally. Without it, evochat uses keyword-based parsing which w
 curl -fsSL https://ollama.com/install.sh | sh
 ```
 
-**On HPC clusters without sudo (e.g. MDC, SLURM):**
+**On HPC clusters without sudo (e.g. SLURM):**
 
 ```bash
 # Download the tarball
