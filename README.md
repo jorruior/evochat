@@ -2,7 +2,7 @@
 
 An LLM-powered chatbot for gene evolution queries, backed by the [Ensembl REST API](https://rest.ensembl.org) and [HGNC](https://www.genenames.org).
 
-Ask natural language questions about orthologs, paralogs, gene trees, sequences, cross-references, and gene name history — right from your terminal.
+Ask natural language questions about orthologs, paralogs, gene trees, sequences, cross-references, and gene name history from your terminal.
 
 ## Features
 
@@ -13,7 +13,7 @@ Ask natural language questions about orthologs, paralogs, gene trees, sequences,
 - **Gene trees** — Newick-format phylogenetic trees
 - **Cross-references** — UniProt, RefSeq, HGNC, and more
 - **Taxon filtering** — filter by mammals, primates, vertebrates, etc.
-- **Species search** — resolve common names ("parrot", "tuna") against Ensembl's species database
+- **Species search** — resolve common names ("human", "tuna") against Ensembl's species database
 - **Gene name history** — previous symbols and aliases via HGNC (e.g. LINC01405 → VHRT)
 - **Old symbol resolution** — retired gene names are automatically resolved to current symbols
 
@@ -176,7 +176,7 @@ history = client.get_gene_history("LINC01405")
 | All cross-refs | `"Cross-references for LZTR1"` |
 | Gene history | `"Gene history of LINC01405"` |
 | Previous names | `"Previous names of TUG1"` |
-| Species check | `"Is TUG1 annotated in parrot?"` |
+| Species check | `"Is TUG1 annotated in mouse?"` |
 | List species | `"List all species"` |
 
 ## Taxon Filters
