@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "evochat"
+version = "0.1.0"
+description = "An LLM-powered chatbot for gene evolution queries via Ensembl"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.9"
+authors = [
+    {name = "Jorge Ruiz-Orera"}
+]
+keywords = ["bioinformatics", "genomics", "evolution", "ensembl", "orthologs", "chatbot"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+]
+dependencies = [
+    "requests>=2.28.0",
+    "rich>=13.0.0",
+    "ollama>=0.3.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest", "pytest-mock", "ruff"]
+
+[project.scripts]
+evochat = "evochat.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/jorruior/evochat"
+Repository = "https://github.com/jorruior/evochat"
+
+[tool.setuptools.packages.find]
+include = ["evochat*"]
